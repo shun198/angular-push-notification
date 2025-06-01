@@ -11,6 +11,9 @@
   "engines": {
     "node": "18"
   },
+  "volta": {
+    "node": "18"
+  },
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.8.0",
