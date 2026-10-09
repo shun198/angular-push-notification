@@ -9,6 +9,7 @@
     "test": "ng test"
   },
   "private": true,
+  "packageManager": "pnpm@10.33.4",
   "dependencies": {
     "@angular/animations": "^17.2.4",
     "@angular/common": "^17.2.4",
@@ -43,6 +44,42 @@
     "node": "18.20.0"
   },
   "volta": {
-    "node": "18.20.0"
+    "node": "18.20.0",
+    "pnpm": "10.33.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "protobufjs"],
+    "overrides": {
+      "tar": "7.5.21",
+      "immutable": "4.3.9",
+      "@sigstore/core": "3.2.1",
+      "sigstore": "4.1.1",
+      "launch-editor": "2.14.1",
+      "@grpc/grpc-js": "1.9.16",
+      "qs": "6.15.3",
+      "body-parser": "1.20.6",
+      "express": "4.22.2",
+      "ws": "8.21.1",
+      "engine.io": "6.6.9",
+      "socket.io-adapter": "2.5.8",
+      "@protobufjs/utf8": "1.1.2",
+      "http-proxy-middleware": "3.0.7",
+      "serialize-javascript": "7.0.7",
+      "tmp@0.2": "0.2.7",
+      "inquirer@8": "8.2.7",
+      "socket.io-parser": "4.2.7",
+      "postcss": "8.5.23",
+      "js-yaml@3": "3.15.2",
+      "js-yaml@4": "4.3.2",
+      "postcss-selector-parser@6": "6.1.4",
+      "postcss-selector-parser@7": "7.1.5",
+      "nanoid": "3.3.18",
+      "browserslist": "4.28.9",
+      "ip-address": "10.7.2",
+      "socks": "2.8.10",
+      "piscina": "5.3.2",
+      "undici": "6.29.0",
+      "vite": "5.4.21"
+    }
   }
 }
