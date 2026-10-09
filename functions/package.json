@@ -4,15 +4,17 @@
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "start": "npm run shell",
+    "start": "pnpm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
   "engines": {
     "node": "18"
   },
+  "packageManager": "pnpm@10.33.4",
   "volta": {
-    "node": "18"
+    "node": "18",
+    "pnpm": "10.33.4"
   },
   "main": "index.js",
   "dependencies": {
@@ -22,5 +24,8 @@
   "devDependencies": {
     "firebase-functions-test": "^3.1.0"
   },
-  "private": true
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": ["@parcel/watcher", "protobufjs", "unrs-resolver"]
+  }
 }
